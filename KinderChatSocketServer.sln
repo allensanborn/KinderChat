@@ -1,18 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "KinderChat.WorkerRole", "KinderChatWorkerRole\KinderChat.WorkerRole.ccproj", "{6517A0C7-2248-46DC-AA8A-AD861A48B78D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.WorkerRole.SocketServer", "KinderChatWorkerRole\KinderChat.WorkerRole.SocketServer\KinderChat.WorkerRole.SocketServer.csproj", "{232AD501-9614-413E-82CA-BFDBFC73D6AE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.ServiceBusShared", "KinderChatWorkerRole\KinderChat.ServiceBusShared\KinderChat.ServiceBusShared.csproj", "{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.WorkerRole.SocketServer.ConsoleHost", "KinderChatWorkerRole\KinderChat.WorkerRole.SocketServer.ConsoleHost\KinderChat.WorkerRole.SocketServer.ConsoleHost.csproj", "{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.ServerClient", "KinderChat.ServerClient\KinderChat.ServerClient.csproj", "{302ACDE4-76E7-47A0-9291-A7D75E263E7B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6674B14E-D7E1-4615-85D7-CC8F11DD2CCA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerRole", "WorkerRole", "{5E3266C8-F726-44BE-86B4-88C9B5F6B374}"
@@ -23,6 +13,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D48E1E
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "KinderChat.WorkerRole", "KinderChatWorkerRole\KinderChat.WorkerRole.ccproj", "{6517A0C7-2248-46DC-AA8A-AD861A48B78D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.WorkerRole.SocketServer", "KinderChatWorkerRole\KinderChat.WorkerRole.SocketServer\KinderChat.WorkerRole.SocketServer.csproj", "{232AD501-9614-413E-82CA-BFDBFC73D6AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.ServiceBusShared", "KinderChatWorkerRole\KinderChat.ServiceBusShared\KinderChat.ServiceBusShared.csproj", "{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.WorkerRole.SocketServer.ConsoleHost", "KinderChatWorkerRole\KinderChat.WorkerRole.SocketServer.ConsoleHost\KinderChat.WorkerRole.SocketServer.ConsoleHost.csproj", "{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.ServerClient", "KinderChat.ServerClient\KinderChat.ServerClient.csproj", "{302ACDE4-76E7-47A0-9291-A7D75E263E7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
