@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using KinderChat.ServiceBusShared;
+using KinderChat.ServiceBusShared.Entities;
+using KinderChatServer.Core;
+using KinderChatServer.DAL;
 using Microsoft.Owin;
 using Microsoft.Owin.StaticFiles;
 using Newtonsoft.Json;
 using Owin;
-using KinderChat.ServiceBusShared;
-using KinderChat.ServiceBusShared.Entities;
-using KinderChatServer.Core;
-using KinderChatServer.DAL;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 [assembly: OwinStartup(typeof(KinderChatServer.Startup))]
 
@@ -28,7 +28,8 @@ namespace KinderChatServer
                 RequestPath = new PathString("/Images")
             });
 
-            var messages = new ProcessedMessagesQueue(ConnectionString, OnMessageArrived);
+            //var messages = new ProcessedMessagesQueue(ConnectionString, OnMessageArrived);
+            var messages = new ProcessedMessagesQueue(ConnectionString);
         }
 
         private bool OnMessageArrived(Message messageDto)
@@ -60,7 +61,6 @@ namespace KinderChatServer
                     //await Notifications.Instance.Hub.SendTemplateNotificationAsync(notification, userTag);
                     //await db.SaveChangesAsync();
                 }
-
             }
             catch (Exception ex)
             {
